@@ -1,0 +1,52 @@
+.WrapperContainer {
+        position: relative;
+
+    @media screen and (max-width: 767px) {
+        position: absolute;
+        top: 0px;
+        padding: 0px 20px 0px 20px;
+    }
+    @media screen and (min-width: 768px){
+        margin-bottom: 91px;
+    }
+}
+
+.InputSearch{
+    position: relative;
+    height: 59px;
+    padding: 16px 15px 15px 58px;
+    background: #FFFFFF;
+    border: 1px solid #D7D8D9;
+    border-radius: 4px;
+
+    @media screen and (max-width: 767px){
+        min-width: 335px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 340px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-bottom: 32px;
+    }
+
+    &::placeholder {
+        font-size: 18px;
+        line-height: 1.56;
+        color: #22252E;
+    }
+}
+
+.IconSearch{
+    position: absolute;
+    top:20px;
+    width: 18px;
+    height: 18px;
+
+    @media screen and (max-width: 767px){   
+        left: 40px;
+    }
+    @media screen and (min-width: 768px){
+        right: 302px;
+    }
+}

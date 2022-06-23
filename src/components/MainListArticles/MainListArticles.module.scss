@@ -1,0 +1,137 @@
+.WrapperContainer {
+    @media screen and (max-width: 767px) {
+        padding: 99px 30px 0px 30px;
+        margin-bottom: 60px;
+    }
+    @media screen and (min-width: 768px){
+        width: 780px;
+    }
+
+}
+.Title{
+    @media screen and (max-width: 767px) {
+        margin-bottom: 12px;
+        margin-top: 20px
+    }
+    
+}
+.TitleSection{
+    margin-bottom: 40px;
+}
+
+.item {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #EBECED;
+    &:not(:last-child) {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 20px;
+        }
+        @media screen and (min-width: 768px) {
+            margin-bottom: 30px;
+        }
+      
+    }
+        @media screen and (max-width: 767px){
+            width: 315px;
+            flex-direction: column;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1199px){
+            width: 280;
+        }
+        @media screen and (min-width: 1200px) {
+            width: 280;
+            display: flex;
+        }
+}
+.ItemImage{
+    @media screen and (max-width: 767px){
+        width: 315px;
+        margin-bottom: 20px;
+        
+    }
+    @media screen and (min-width: 768px) {
+        max-width: 280px;
+        margin-right: 40px;
+    }
+}
+.ItemAuthor{
+    margin-bottom: 10px;
+}
+.NumberViews {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 1.57;
+    color: #889099;
+}
+
+.IconComment {
+    margin-right: 9px;
+}
+
+.ItemLine{
+    height: 1px;
+    background: #EBECED;
+    @media screen and (max-width: 767px) {
+        width: 315px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 740px;
+    }
+}
+
+.Tags {
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 9px;
+    color: #4CB649;
+}
+
+.Data {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.57;
+    color: #889099;
+    text-transform: uppercase;
+}
+
+.Author {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.57;
+    color: #323642;
+    margin-right: 8px;
+}
+
+.BtnPost{
+    width: 315px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #4CB649;
+    border: 1px solid #4CB649;
+    border-radius: 30px;
+    background-color: #ffffff;
+
+    &:hover,
+    &:focus{
+    color: #ffffff;
+    background-color: #4CB649;
+    border: 1px solid #4CB649;
+    filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.101961));
+    }
+    @media screen and (min-width: 768px) {
+        display: block;
+        margin: 0 auto
+    }
+
+}
+.list{
+    margin-bottom: 60px;
+}

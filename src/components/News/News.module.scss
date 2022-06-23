@@ -1,0 +1,99 @@
+.WrapperContainer{
+    position: relative;
+
+    @media screen and (max-width: 767px){
+        padding: 0px 30px 0px 30px;
+        margin-bottom: 60px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 340px;
+    }
+}
+
+.Title{
+    position: relative;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1.42;
+    color: #22252E;
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+
+.IconBluebell{
+    position: absolute;
+    top: -10px;
+    left: 20px;
+
+    @media screen and (min-width: 768px) {
+        left: -8px;
+    }
+}
+
+.IconRss{
+    position: absolute;
+    top: 0px;
+    top: -16px;
+}
+
+.List{
+    list-style: disc;
+    list-style-position: inside;
+    padding: 0;
+
+    &::after {
+        content: ' ';
+        height: 1px;
+        display: inline-block;
+        background-color: #EBECED;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    
+        @media screen and (max-width: 767px) {
+            width: 315px;
+        }
+        @media screen and (min-width: 768px) {
+            width: 340px;
+        }
+    }
+}
+
+.Item{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.57;
+    color: #323642;
+    &:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    &::marker {
+        color: #4CB649;
+    }
+}
+
+.SectionPopPost{
+    position: relative;
+}
+
+.PrivatePic{
+    @media screen and (min-width: 375px) and (max-width: 767px){
+        margin-bottom: 60px;    
+    }
+    @media screen and (min-width: 768px){
+        width: 340px;
+        margin-bottom: 51px;
+    }
+}
+
+.Tag__title {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1.42;
+    color: #22252E;
+    margin-bottom: 15px;
+}
+
+.Tag__image {
+    width: 324px;
+}

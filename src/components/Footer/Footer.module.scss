@@ -1,0 +1,182 @@
+.WrapperContainer{
+    padding: 29px 20px 0px 20px;
+    @media screen and (min-width: 768px) {
+        position: relative;
+        padding: 4px 0px 0px 0px;
+    }
+}
+.Title{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22;
+    margin-bottom: 54px;
+    color: #000000;
+    @media screen and (min-width: 768px) {
+        font-size: 27px;
+        margin-bottom: 58px;
+    }
+}
+.CompanyWrap{
+    @media screen and (min-width: 375px) and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        &:first-child{
+            margin-right: 36px;
+        }
+    }
+    @media screen and (min-width:1600px) {
+        width: 147px;
+    }
+}
+.CompanyProgramWrap{
+    @media screen and (min-width: 375px) and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 35px
+        }
+    }
+    @media screen and (min-width: 768px) {
+        &:not(:last-child) {
+            margin-bottom: 58px
+        }
+    }
+    @media screen and (min-width:1600px) {
+        width: 109px;
+    }
+}
+.CompanyWrapLegal{
+    @media screen and (min-width: 375px) and (max-width: 767px) {
+        position: relative;
+        margin-bottom: 40px;
+    }
+    @media screen and (min-width: 768px) {
+        margin-right: 69px;
+    }
+    @media screen and (min-width:1600px) {
+        width: 130px;
+    }
+    
+}
+.TitleFooter{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    color: #323642;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 20px;
+    }
+}
+.TitleFooter__social{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    color: #323642;
+}
+.Item{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.57;
+    color: #889099;
+    &:not(:last-child) {
+        margin-bottom: 12px;
+    }
+}
+.ItemLink{
+    color: inherit;
+    cursor: pointer;
+}
+.FooterNav{
+    position: relative;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        position: relative;
+    }
+}
+.SectionFooter{
+    display: flex;
+    @media screen and (min-width: 375px) and (max-width: 767px) {
+        margin-bottom: 35px;
+    }
+    @media screen and (min-width: 768px) {
+        margin-right: 46px;
+    }
+}
+.SocialWrap{
+    @media screen and (min-width: 375px) and (max-width: 767px) {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+.SocialList{
+    display: flex;
+    justify-content: space-between;
+    margin: -10px;
+    width: 167px;
+    @media screen and (min-width: 375px) and (max-width: 767px) {
+        flex-wrap: wrap;
+    }
+    
+}
+.SocialItem{
+    margin: 10px;
+}
+.AboutFooterWrap{
+    @media screen and (min-width: 768px) and (max-width: 1190px) {
+        width: 342px;
+    }
+    @media screen and (min-width: 1200px) {
+        width:440px;
+    }
+    @media screen and (min-width: 1600px) {
+        width: 592px;
+    }
+}
+.AboutText{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.57;
+    color: #889099;
+    margin-bottom: 18px;
+}
+.FooterText{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    color: #889099;
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+.SocialItem__icon{
+    cursor: pointer;
+}
+
+.SocialItem__icon:hover,
+.SocialItem__icon:focus{
+    fill: #4CB649;
+    transform: scale(1.15)
+}
+
+.FooterTextWrap{
+    @media screen and (min-width: 768px) and (max-width: 1190px) {
+        width: 342px;
+        margin-bottom: 40px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 440px;
+        margin-bottom: 40px;
+    }
+    @media screen and (min-width: 1600px) {
+        width: 576px;
+        margin-bottom: 40px;
+    }
+}

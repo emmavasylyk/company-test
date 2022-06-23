@@ -1,0 +1,102 @@
+.Topmenu{
+    @media screen and (min-width: 768px){
+        display: flex;
+    }
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+}
+.TopmenuItem{
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #323642;
+    text-transform: uppercase;
+
+    &:not(:last-child) {
+        @media screen and (max-width: 767px){
+            margin-bottom: 10px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            margin-right: 10px;
+        }
+        @media screen and (min-width: 1200px){
+            margin-right: 31px;
+        }
+    }
+
+    &:first-child {
+        border-left: 0;
+    }
+
+    &__link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        transition: .3s linear;
+        color: inherit;
+    }
+    &__img{
+        width: 10px;
+        height: 5px;
+        margin-left: 10px;
+        @media screen and (min-width: 768px) and (max-width: 1199px){
+            margin-left: 5px;
+        }
+    }
+
+    &:hover>.Submenu{
+        transform: rotateX(0deg);
+        visibility: visible;
+        opacity: 1;
+        background: #ffffff;
+    }
+}
+    
+.TopmenuItem:hover::before {
+    position: absolute;
+    bottom: -6px;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #4CB649;
+}
+
+.Submenu{
+    position: absolute;
+    top: 31px;
+    left: 0;
+    min-width: 130px;
+    border-top: 1px solid #CBCBCC;
+    border-left: 1px solid #CBCBCC;
+    border-right: 1px solid #CBCBCC;
+    visibility: hidden;
+    opacity: 0;
+    transform-origin: 0% 0%;
+    transform: rotateX(-90deg);
+    transition: .3s linear;
+    z-index: 5;
+}
+
+.SubmenuItem{
+    position: relative;
+    padding: 10px 20px;
+    border-bottom: 1px solid #CBCBCC;
+
+    &__link{
+        color: #282828;
+        font-size: 12px;
+    }
+
+    &__link:hover{
+        color: #4CB649;
+    }
+}

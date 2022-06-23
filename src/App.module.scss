@@ -1,0 +1,22 @@
+.Wrapper {
+    position: relative;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+}
+.NestedWrapper{
+        @media screen and (min-width: 768px) and (max-width: 1599px) {
+            padding-left: 28px;
+        }
+    @media screen and (min-width: 1200px){
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        padding-left: 60px;
+        border-left: 1px solid #EBECED;
+    }
+}
+
